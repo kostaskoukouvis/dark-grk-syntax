@@ -1,21 +1,19 @@
-// These colors are specific to the theme. Do not use in a package!
-
-@cyan: #7DD6FA;
-@blue: #3591E6;
-@purple: #b294bb;
-@green: #18E012;
-@red: #DE333C;
-@lime: #EAF589;
-@yellow: #E6DB74;
-@orange: #FF9D00;
-@light-orange: #f0c674;
-
-@dark-gray: #212121;
-@darker-gray: #262626;
-@light-gray: #889196;
-@white: #E7EAF5;
-@gold-gray: #3B3A32;
-@dark-green: #7CB38C;
-@very-light-gray: #c5c8c6;
-@gray: #889196;
-@very-dark-gray: #1d1f21;
+//
+// Colors
+//
+@color-text: hsl(209, 100%, 95%);
+@color-bg: hsl(0, 0%, 10%);
+//
+@color-function: hsl(197, 93%, 74%);
+@color-variable: hsl(209, 100%, 50%);
+@color-class: hsl(209, 37%, 58%);
+@color-storage: hsl(37, 100%, 50%);
+@color-string: hsl(137, 27%, 59%);
+@color-numbers: hsl(54, 70%, 68%);
+@color-comment: hsl(209, 6%, 56%);
+@color-illegal: hsl( 5, 48%, 51%);
+@color-comment-bg: lighten(@color-bg, 3%);
+@color-class: hsl(197, 93%, 50%);
+@color-gutter: darken(@color-text, 15%);
+@color-guide: fade(@color-text, 10%);
+@color-accent: @color-function;
