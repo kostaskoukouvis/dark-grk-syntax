@@ -1,0 +1,244 @@
+// Language syntax highlighting
+
+.comment {
+  color: @color-comment;
+  // background-color: @color-comment-bg;
+  // padding: 2px 100% 3px 0;
+  font-style: italic;
+  // z-index: 0;
+
+  .markup.link {
+    color: @color-storage;
+  }
+}
+
+.keyword {
+  color: @color-function;
+  font-style: italic;
+
+  &.control {
+    color: @color-storage;
+  }
+
+  &.operator {
+    color: @color-function;
+  }
+
+  &.other.special-method {
+    color: @color-function;
+  }
+
+  &.other.unit {
+    color: @color-numbers;
+  }
+}
+
+.storage {
+  color: @color-storage;
+  font-weight: bold;
+
+  &.type {
+    &.annotation,
+    &.primitive {
+      font-weight: bold;
+      color: @color-storage;
+    }
+    &.function {
+      color: @color-text;
+      font-weight: bold;
+    }
+  }
+
+  &.modifier {
+    &.package,
+    &.import {
+      color: @color-storage;
+    }
+  }
+}
+
+.constant {
+  color: @color-numbers;
+
+  &.variable {
+    color: @color-numbers;
+  }
+
+  &.character.escape {
+    color: @color-string;
+  }
+
+  &.numeric {
+    color: @color-numbers;
+  }
+
+  &.other.color {
+    color: @color-numbers;
+  }
+
+  &.other.symbol {
+    color: @color-numbers;
+  }
+}
+
+.variable {
+  color: @color-variable;
+}
+
+.string {
+  color: @color-string;
+}
+
+.punctuation {
+  &.definition {
+    &.comment {
+      color: @color-comment;
+      // padding-right: 0;
+    }
+
+    &.method-parameters,
+    &.function-parameters,
+    &.parameters,
+    &.separator,
+    &.seperator,
+    &.array {
+      color: @color-storage;
+      font-style: italic;
+    }
+
+    &.heading,
+    &.identity {
+      color: @color-class;
+    }
+
+    &.bold {
+      color: @color-class;
+      font-weight: bold;
+    }
+
+    &.italic {
+      color: @color-class;
+      font-style: italic;
+    }
+  }
+
+  &.section {
+    &.embedded {
+      color: @color-variable;
+    }
+
+    &.method,
+    &.class,
+    &.inner-class {
+      color: @color-class;
+    }
+  }
+}
+
+.support {
+  &.class {
+    color: @color-numbers;
+  }
+
+  &.type {
+    color: @color-numbers;
+  }
+
+  &.function  {
+    color: @color-numbers;
+
+    &.any-method {
+      color: @color-numbers;
+    }
+  }
+}
+
+.entity {
+  &.name.function {
+    color: @color-function;
+    font-style: italic;
+  }
+
+  &.name.type {
+    color: @color-class;
+  }
+
+  &.other.inherited-class {
+    color: @color-class;
+  }
+
+  &.name.class,
+  &.name.type.class {
+    color: @color-class;
+  }
+
+  &.name.section {
+    color: @color-storage;
+  }
+
+  &.name.tag {
+    color: @color-storage;
+  }
+
+  &.other.attribute-name {
+    color: @color-storage;
+
+    &.id {
+      color: @color-string;
+    }
+  }
+}
+
+.meta {
+  &.class {
+    color: @color-class;
+
+    &.body {
+      color: @color-class;
+    }
+  }
+
+  &.method-call,
+  &.method {
+    color: @color-function;
+  }
+
+  &.definition {
+    &.variable {
+      color: @color-function;
+    }
+  }
+
+  &.link {
+    color: @color-storage;
+  }
+
+  &.require {
+    color: @color-string;
+  }
+
+  &.selector {
+    color: @color-string;
+  }
+
+  &.separator {
+    color: @color-numbers;
+  }
+
+  &.tag {
+    color: @color-numbers;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.invalid {
+  &.deprecated {
+    color: @color-comment;
+  }
+  &.illegal {
+    color: @color-illegal;
+  }
+}
